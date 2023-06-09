@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    
+
+
+}
+img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+.range-input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #d87238;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    font-size: 20px; 
+    color: #fff;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-right: 50px;
+}
+.range-trigger {
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 50px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); 
+    border: 1px solid #d8733893;   
+    cursor: pointer;
+    
+}
+.inactive {
+    display: none;
+    left: 2600px;
+}
+.kid-img {
+    display: none
+}
+.kid-img.active {
+    display: block;
+    animation: animationActive 1s forwards;
+}
+.adult-img.active {
+    animation: animationActive 1s forwards;
+}
+.old-img.active {
+    animation: animationActive 1s forwards;
+}
+.dina-img.active {
+    animation: animationActive 1s forwards;
+}
+.alien-img.active {
+    animation: animationActive 1s forwards;
+}
+@keyframes animationActive {
+    0% {
+        left: 2600px;
+    }
+    100% {
+        left: 44%;
+    }
+}
